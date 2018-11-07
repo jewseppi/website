@@ -12,6 +12,9 @@ pages:
   - mv build/* public/
   - export SSHPASS=$USER_PASS
   - script -qc "sshpass -e scp -o stricthostkeychecking=no -r . qsc6hqnytelo@jsilverman.ca:/public_html" /dev/null
+  environment:
+    name: production
+    url: http://jsilverman.ca
   artifacts:
     paths:
     - public

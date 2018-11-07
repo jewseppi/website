@@ -10,7 +10,6 @@ pages:
   - npm install
   - npm run build
   - mv build/* public/
-  - sshpass
   - export SSHPASS=$USER_PASS
   - sshpass -e scp -o stricthostkeychecking=no -r . qsc6hqnytelo@jsilverman.ca:/public_html
   artifacts:

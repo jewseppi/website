@@ -10,6 +10,7 @@ pages:
   - npm install
   - npm run build
   - mv build/* public/
+  - script -qc "sshpass -V" /dev/null
   - export SSHPASS=$USER_PASS
   - script -qc "sshpass -e scp -o stricthostkeychecking=no -r . qsc6hqnytelo@jsilverman.ca:/public_html" /dev/null
   environment:

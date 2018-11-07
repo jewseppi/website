@@ -11,7 +11,7 @@ pages:
   - npm run build
   - mv build/* public/
   - export SSHPASS=$USER_PASS
-  - sshpass -e scp -o stricthostkeychecking=no -r . qsc6hqnytelo@jsilverman.ca:/public_html
+  - script -qc "sshpass -e scp -o stricthostkeychecking=no -r . qsc6hqnytelo@jsilverman.ca:/public_html" /dev/null
   artifacts:
     paths:
     - public

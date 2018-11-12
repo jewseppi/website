@@ -43,7 +43,6 @@ class App extends Component {
   };
 
   render() {
-    const run = this.state.size;
     return (
       <Mouse>
         <div
